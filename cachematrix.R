@@ -1,10 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
-##
-## function that takes in the same arguements matrix() and sets 
 
+
+## parent function that takes in the same arguments matrix()
 makeCacheMatrix <- function(data = NA, nrow = 1, ncol = 1, byrow = FALSE,
                             dimnames = NULL) {
   inv <- NULL
@@ -30,7 +29,7 @@ makeCacheMatrix <- function(data = NA, nrow = 1, ncol = 1, byrow = FALSE,
 }
 
 
-## Write a short comment describing this function
+## CacheSolve returns the cached inverse of x if availble. If not, it will calculate by using solve().
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
